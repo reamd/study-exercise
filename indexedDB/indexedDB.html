@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="reamd">
+    <title>indexedDB数据库的操作</title>
+    <style>
+        * {padding:0;margin:0;}
+        #dataFrame {padding: 20px;}
+        ul li {
+            list-style: none;
+            padding: 10px 0;
+        }
+        table {border: 1px solid #000;}
+        td,th {width: 110px; text-align: center; border: 1px solid #000;}
+        td input {width: 96%;}
+        .editRecord {margin-right: 5px;}
+        .updateRecord {margin-right: 5px;}
+        .deleteRecord {margin-left: 5px;}
+    </style>
+</head>
+<body>
+<h1>indexedDB数据库的操作</h1>
+<div id="dataFrame">
+    <ul>
+        <li>姓名: <input type="text" name="name" id="name"></li>
+        <li>手机: <input type="text" name="phone" id="phone"></li>
+        <li>地址: <input type="text" name="address" id="address"></li>
+        <li><button id="addRecord">增加</button>
+            &nbsp;&nbsp;<button id="deleteDB">删除DB</button>
+        </li>
+        <li><input type="text" id="keyWord"/><button id="queryRecords">查询</button></li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>手机</th>
+                <th>地址</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody id="content">
+
+        </tbody>
+    </table>
+</div>
+
+<script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+<script src="indexedDB.js"></script>
+
+</body>
+</html>
