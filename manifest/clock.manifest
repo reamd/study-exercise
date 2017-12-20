@@ -1,0 +1,12 @@
+CACHE MANIFEST
+#version1.1
+CACHE:
+index.html
+clock.css
+clock.js
+
+NETWORK:
+img/logo.png
+
+FAILBACK :
+test/aa.html /404.html
